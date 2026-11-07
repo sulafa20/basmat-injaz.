@@ -16,10 +16,10 @@
 </main><script>
 // GitHub Pages is public. Never put private teacher names, Drive tokens, or API secrets here.
 // Paste only the /exec URL of your access-restricted Apps Script deployment.
-const APPS_SCRIPT_URL = 'PASTE_YOUR_PRIVATE_APPS_SCRIPT_EXEC_URL_HERE';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzq704QbzkvIfbSAyggq5orekW6lPxsz_WvMv4_KpIUvSiSZs1-SDuAzYmWf9rEqZKWkw/exec';
 const link=document.getElementById('launch');const hint=document.getElementById('hint');
 if(/^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(APPS_SCRIPT_URL)){
  link.href=APPS_SCRIPT_URL;link.target='_blank';link.rel='noopener noreferrer';
  hint.textContent='سيفتح التطبيق في نافذة Google آمنة. سجّلي الدخول بالحساب المصرّح له.';
-}else{link.removeAttribute('href');link.classList.add('status');link.textContent='يلزم إضافة رابط التطبيق أولًا';hint.textContent='افتحي index.html واستبدلي PASTE_YOUR_PRIVATE_APPS_SCRIPT_EXEC_URL_HERE برابط /exec من Apps Script.';}
+}else{link.removeAttribute('href');link.classList.add('status');link.textContent='يلزم إضافة رابط التطبيق أولًا';hint.textContent='افتحي index.html واستبدلي https://script.google.com/macros/s/AKfycbzq704QbzkvIfbSAyggq5orekW6lPxsz_WvMv4_KpIUvSiSZs1-SDuAzYmWf9rEqZKWkw/exec برابط /exec من Apps Script.';}
 </script></body></html>
